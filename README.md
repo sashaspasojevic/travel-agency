@@ -1,2 +1,2 @@
 # the page is under construction
-## https://lucent-brigadeiros-6d53e1.netlify.app/
+## https://fastidious-strudel-7ca206.netlify.app
