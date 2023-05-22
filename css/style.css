@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 40px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:hover {
+    color: white;
+    background-color: orchid;
+    border: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+.nav_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  opacity: 0; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .nav_btn {
+      opacity: 1;
+      margin-left: 10px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .nav_btn {
+      opacity: 1;
+      margin-left: 10px; } }
+
+.nav_btn-burger {
+  width: 25px;
+  height: 3px;
+  background: #1b1c27;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out; }
+  .nav_btn-burger:hover {
+    background-color: #9ec1d7; }
+
+.nav_btn-burger::before,
+.nav_btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #1b1c27;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out; }
+
+.nav_btn-burger:hover::before,
+.nav_btn-burger:hover::after {
+  background-color: #9ec1d7; }
+
+.nav_btn-burger::before {
+  transform: translateY(-8px); }
+
+.nav_btn-burger::after {
+  transform: translateY(8px); }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 40px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:hover {
+    color: white;
+    background-color: orchid;
+    border: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+@media only screen and (min-width: 651px) and (max-width: 896px) {
+  header {
+    overflow: hidden; } }
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+  header {
+    overflow: hidden; } }
+header .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.65;
+  overflow: hidden; }
+header__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.nav__headear {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-top: 50px;
+  color: #1b1c27;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 27px;
+  border: 1px solid #000;
+  padding: 0 20px; }
+  .nav__headear .fa-times-circle {
+    opacity: 0; }
+    .nav__headear .fa-times-circle:hover {
+      color: #9ec1d7; }
+  .nav__headear .nav__header-logo {
+    width: 100px; }
+  .nav__headear .nav__header-ul {
+    display: flex;
+    margin-right: auto;
+    margin-left: 50px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .nav__headear .nav__header-ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #eff1ee;
+        transition: all 0.5s ease-in-out;
+        margin: unset;
+        z-index: 10;
+        transform: translate(-100%); } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .nav__headear .nav__header-ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #eff1ee;
+        transition: all 0.5s ease-in-out;
+        margin: unset;
+        z-index: 10;
+        transform: translate(-100%); } }
+    .nav__headear .nav__header-ul li:not(:last-child) {
+      margin-right: 20px; }
+    .nav__headear .nav__header-ul li {
+      transition: all 0.5s ease-in-out; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .nav__headear .nav__header-ul li {
+          padding: 25px 0; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .nav__headear .nav__header-ul li {
+          padding: 25px 0; } }
+      .nav__headear .nav__header-ul li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #65403a;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(37px); }
+      .nav__headear .nav__header-ul li a:hover::after {
+        width: 100%;
+        transition: all 0.5s ease-in-out; }
+      .nav__headear .nav__header-ul li a:hover {
+        color: #9ec1d7; }
+  .nav__headear .nav__header-login--ul {
+    display: flex; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .nav__headear .nav__header-login--ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        background: #eff1ee;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-100%); } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .nav__headear .nav__header-login--ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        background: #eff1ee;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-100%); } }
+    .nav__headear .nav__header-login--ul li {
+      margin-left: 20px;
+      transition: all 0.5s ease-in-out; }
+      .nav__headear .nav__header-login--ul li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #65403a;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(37px); }
+      .nav__headear .nav__header-login--ul li a:hover::after {
+        width: 100%;
+        transition: all 0.5s ease-in-out; }
+      .nav__headear .nav__header-login--ul li a:hover {
+        color: #9ec1d7; }
+  .nav__headear #searchBtn {
+    margin-right: 20px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .nav__headear #searchBtn {
+        margin-left: auto; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .nav__headear #searchBtn {
+        margin-left: auto; } }
+
+@media only screen and (min-width: 651px) and (max-width: 896px) {
+  .active__btn {
+    opacity: 1 !important;
+    z-index: 11;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: #65403a;
+    transition: all 0.5s ease-in-out; } }
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+  .active__btn {
+    opacity: 1 !important;
+    z-index: 11;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: #65403a;
+    transition: all 0.5s ease-in-out; } }
+.nav__header-ul--toggle {
+  display: none; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+.nav_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  opacity: 0; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .nav_btn {
+      opacity: 1;
+      margin-left: 10px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .nav_btn {
+      opacity: 1;
+      margin-left: 10px; } }
+
+.nav_btn-burger {
+  width: 25px;
+  height: 3px;
+  background: #1b1c27;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out; }
+  .nav_btn-burger:hover {
+    background-color: #9ec1d7; }
+
+.nav_btn-burger::before,
+.nav_btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #1b1c27;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out; }
+
+.nav_btn-burger:hover::before,
+.nav_btn-burger:hover::after {
+  background-color: #9ec1d7; }
+
+.nav_btn-burger::before {
+  transform: translateY(-8px); }
+
+.nav_btn-burger::after {
+  transform: translateY(8px); }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 40px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:hover {
+    color: white;
+    background-color: orchid;
+    border: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+.header__search {
+  position: relative;
+  display: none;
+  margin-left: auto; }
+  .header__search-input {
+    border: none;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 17px;
+    background: #9ec1d7;
+    padding: 10px 100px 10px 40px;
+    border-radius: 50px; }
+  .header__search .header__search-icon1 {
+    position: absolute;
+    top: 10px;
+    left: 9px; }
+  .header__search .header__search-icon2 {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+
+/*# sourceMappingURL=style.css.map */

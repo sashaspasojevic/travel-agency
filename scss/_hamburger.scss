@@ -1,0 +1,58 @@
+@import "var";
+@import "mixins";
+
+.nav_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: $transition;
+  opacity: 0;
+
+  @include breakpoint(tablet) {
+    opacity: 1;
+    margin-left: 10px;
+  }
+  @include breakpoint(phone) {
+    opacity: 1;
+    margin-left: 10px;
+  }
+}
+
+.nav_btn-burger {
+  width: 25px;
+  height: 3px;
+  background: $color4;
+  border-radius: 5px;
+  transition: $transition;
+  &:hover {
+    background-color: $color3;
+  }
+}
+
+.nav_btn-burger::before,
+.nav_btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: $color4;
+  border-radius: 3px;
+  transition: $transition;
+}
+
+.nav_btn-burger:hover::before,
+.nav_btn-burger:hover::after {
+  background-color: $color3;
+}
+
+.nav_btn-burger::before {
+  transform: translateY(-8px);
+}
+
+.nav_btn-burger::after {
+  transform: translateY(8px);
+}

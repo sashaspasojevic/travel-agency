@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay loop muted>
+          <source src="img/seaside5.mp4" />
+          Your browser is not supported!
+        </video>
+      </div>
+      <nav class="container">
+        <!-- logo -->
+        <div class="nav__headear">
+          <div class="nav__header-logo">
+            <img src="img/logo.jpg" alt="logo" />
+          </div>
+          <i class="fas fa-times-circle" id="close"></i>
+
+          <!-- nav 1 -->
+          <ul class="nav__header-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <i class="fas fa-search-location" id="searchBtn"></i>
+          <div class="header__search">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Search website"
+              id="search"
+            />
+            <i class="header__search-icon1 fas fa-search-location"></i>
+            <i class="header__search-icon2 fas fa-times"></i>
+          </div>
+          <div class="nav_btn">
+            <div class="nav_btn-burger"></div>
+          </div>
+          <!-- nav 2 -->
+          <div class="nav__header-login">
+            <ul class="nav__header-login--ul">
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
