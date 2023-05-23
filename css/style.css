@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /**************
 FLEX
 **************/
@@ -9,6 +10,16 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
@@ -98,24 +109,6 @@ select {
     .py {
       padding: 30px 0; } }
 
-.btn {
-  display: inline-block;
-  background-color: blue;
-  color: white;
-  border: 1px solid blue;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 30px;
-  overflow: hidden;
-  margin: 10px 0;
-  border-radius: 3px;
-  cursor: pointer; }
-  .btn:hover {
-    color: white;
-    background-color: orchid;
-    border: none; }
-
 a {
   text-decoration: none;
   color: inherit; }
@@ -129,6 +122,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 /**************
 FLEX
 **************/
@@ -138,6 +134,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 /**************
 FLEX
 **************/
@@ -147,6 +146,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 .nav_btn {
   position: relative;
   display: flex;
@@ -204,6 +206,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 *,
 *::before,
 *::after {
@@ -287,31 +292,19 @@ select {
     .py {
       padding: 30px 0; } }
 
-.btn {
-  display: inline-block;
-  background-color: blue;
-  color: white;
-  border: 1px solid blue;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 30px;
-  overflow: hidden;
-  margin: 10px 0;
-  border-radius: 3px;
-  cursor: pointer; }
-  .btn:hover {
-    color: white;
-    background-color: orchid;
-    border: none; }
-
 a {
   text-decoration: none;
   color: inherit; }
 
 @media only screen and (min-width: 651px) and (max-width: 896px) {
   header {
-    overflow: hidden; } }
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+    header .bg-video {
+      display: none; } }
 @media only screen and (min-width: 200px) and (max-width: 650px) {
   header {
     overflow: hidden; } }
@@ -454,6 +447,9 @@ header__content {
     @media only screen and (min-width: 200px) and (max-width: 650px) {
       .nav__headear #searchBtn {
         margin-left: auto; } }
+    .nav__headear #searchBtn:hover {
+      color: #9ec1d7;
+      cursor: pointer; }
 
 @media only screen and (min-width: 651px) and (max-width: 896px) {
   .active__btn {
@@ -478,6 +474,104 @@ header__content {
 .nav__header-ul--toggle {
   display: none; }
 
+/********************************
+HEADER CONTENT
+********************************/
+.header__content {
+  display: flex;
+  color: #fff; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .header__content {
+      flex-direction: column; } }
+
+.header__info h1 {
+  font-size: 3.1rem;
+  margin-top: 50px;
+  text-transform: capitalize;
+  max-width: 16rem; }
+.header__info p {
+  margin: 50px 0 100px;
+  max-width: 400px;
+  font-weight: 500;
+  font-size: 1.1rem; }
+.header__info .header__info-btns a:not(:last-child) {
+  display: inline-block;
+  text-align: center;
+  background-color: #9ec1d7;
+  color: #fff;
+  border: 1px solid #9ec1d7;
+  letter-spacing: 2px;
+  padding: 16px 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden; }
+  .header__info .header__info-btns a:not(:last-child):hover {
+    color: #9ec1d7;
+    background-color: #fff;
+    border: 1px solid #9ec1d7; }
+.header__info .header__info-btns a:last-child {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  color: #9ec1d7;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+  padding: 16px 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden; }
+  .header__info .header__info-btns a:last-child:hover {
+    color: #fff;
+    background-color: #9ec1d7;
+    border: 1px solid #fff; }
+
+.header__quide .header__quide-content {
+  display: flex;
+  margin-top: 330px; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .header__quide .header__quide-content {
+      display: flex;
+      margin: 70px 0 70px 140px; } }
+  .header__quide .header__quide-content .fa-quote-left {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.4); }
+.header__quide .header__quide-best {
+  margin-left: -34px;
+  margin-top: 30px; }
+  .header__quide .header__quide-best p {
+    max-width: 460px; }
+.header__quide .header__quide-profile img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; }
+.header__quide .header__quide-data {
+  position: absolute;
+  transform: rotate(-90deg) scaleX(-1);
+  transform-origin: top left;
+  margin-left: 4px;
+  margin-top: 20px;
+  width: 60px; }
+  .header__quide .header__quide-data .header__quide-name {
+    transform: scaleX(-1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px; }
+  .header__quide .header__quide-data .header__quide-country {
+    transform: scaleX(-1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px; }
+
 /**************
 FLEX
 **************/
@@ -487,6 +581,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 .nav_btn {
   position: relative;
   display: flex;
@@ -544,6 +641,9 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 *,
 *::before,
 *::after {
@@ -627,24 +727,6 @@ select {
     .py {
       padding: 30px 0; } }
 
-.btn {
-  display: inline-block;
-  background-color: blue;
-  color: white;
-  border: 1px solid blue;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 30px;
-  overflow: hidden;
-  margin: 10px 0;
-  border-radius: 3px;
-  cursor: pointer; }
-  .btn:hover {
-    color: white;
-    background-color: orchid;
-    border: none; }
-
 a {
   text-decoration: none;
   color: inherit; }
@@ -658,10 +740,14 @@ breakpoint
 /**************
 hover link
 **************/
+/**********************************
+butoon
+************************************/
 .header__search {
   position: relative;
   display: none;
-  margin-left: auto; }
+  margin-left: auto;
+  transition: all 0.5s ease-in-out; }
   .header__search-input {
     border: none;
     font-weight: 300;
@@ -674,9 +760,15 @@ hover link
     position: absolute;
     top: 10px;
     left: 9px; }
+    .header__search .header__search-icon1:hover {
+      color: #18465a;
+      cursor: pointer; }
   .header__search .header__search-icon2 {
     position: absolute;
     top: 10px;
     right: 10px; }
+    .header__search .header__search-icon2:hover {
+      color: #18465a;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

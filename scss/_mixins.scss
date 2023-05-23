@@ -1,3 +1,5 @@
+@import "var";
+
 /**************
 FLEX
 **************/
@@ -53,5 +55,43 @@ hover link
 
   &:hover {
     color: $color3;
+  }
+}
+
+/**********************************
+butoon
+************************************/
+
+@mixin btn($clrBTN: $color3, $clr: $white) {
+  display: inline-block;
+  text-align: center;
+  // width: fit-content;
+  background-color: $clrBTN;
+  color: $clr;
+  border: 1px solid $clrBTN;
+  letter-spacing: 2px;
+  padding: 16px 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: $transition;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  @include breakpoint(tablet) {
+    // margin-bottom: 40px;
+  }
+
+  @include breakpoint(phone) {
+    // width: 100%;
+    // justify-content: center;
+    // margin-bottom: 40px;
+  }
+
+  &:hover {
+    color: $clrBTN;
+    background-color: $clr;
+    border: 1px solid $clrBTN;
   }
 }

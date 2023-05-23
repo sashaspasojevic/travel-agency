@@ -5,7 +5,15 @@
 
 header {
   @include breakpoint(tablet) {
+    background: linear-gradient(rgba($coloBlack, 0.35), rgba($coloBlack, 0.35)),
+      url("../img/background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
+    .bg-video {
+      display: none;
+    }
   }
   @include breakpoint(phone) {
     overflow: hidden;
@@ -145,23 +153,27 @@ header {
     @include breakpoint(phone) {
       margin-left: auto;
     }
+    &:hover {
+      color: $color3;
+      cursor: pointer;
+    }
   }
 }
 
-@include breakpoint(tablet){
+@include breakpoint(tablet) {
   .active__btn {
-      opacity: 1 !important;
-      z-index: 11;
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      font-size: 2.5rem;
-      color: $color5;
-      transition: $transition;
-    }
+    opacity: 1 !important;
+    z-index: 11;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: $color5;
+    transition: $transition;
   }
-  
-  @include breakpoint(phone) {
+}
+
+@include breakpoint(phone) {
   .active__btn {
     opacity: 1 !important;
     z-index: 11;
@@ -176,4 +188,97 @@ header {
 
 .nav__header-ul--toggle {
   display: none;
+}
+
+/********************************
+HEADER CONTENT
+********************************/
+
+.header__content {
+  display: flex;
+  color: $white;
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
+}
+
+.header__info {
+  h1 {
+    font-size: 3.1rem;
+    margin-top: 50px;
+    text-transform: capitalize;
+    max-width: 16rem;
+  }
+  p {
+    margin: 50px 0 100px;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .header__info-btns {
+    a:not(:last-child) {
+      @include btn();
+    }
+    a:last-child {
+      @include btn($white, $color3);
+    }
+  }
+}
+
+.header__quide {
+  .header__quide-content {
+    display: flex;
+    margin-top: 330px;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      // margin-top: 70px;
+      //   margin-left: 140px;
+      //   margin-bottom: 70px;
+      margin: 70px 0 70px 140px;
+    }
+
+    .fa-quote-left {
+      font-size: 5rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .header__quide-best {
+    margin-left: -34px;
+    margin-top: 30px;
+    p {
+      max-width: 460px;
+    }
+  }
+
+  .header__quide-profile {
+    img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+    }
+  }
+
+  .header__quide-data {
+    position: absolute;
+    transform: rotate(-90deg) scaleX(-1);
+    transform-origin: top left;
+    margin-left: 4px;
+    margin-top: 20px;
+    width: 60px;
+    .header__quide-name {
+      transform: scaleX(-1);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .header__quide-country {
+      transform: scaleX(-1);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
 }
