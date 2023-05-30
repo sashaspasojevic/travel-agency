@@ -6,20 +6,19 @@
     <title>Designer</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="bg-video">
-        <video class="bg-video__content" autoplay loop muted>
-          <source src="img/seaside5.mp4" />
-          Your browser is not supported!
-        </video>
-      </div>
       <nav class="container">
         <!-- logo -->
         <div class="nav__headear">
@@ -96,7 +95,58 @@
         </div>
       </div>
     </header>
-
+    <!-- explore -->
+    <section class="explore py">
+      <div class="explore__card">
+        <div class="explore__card-content">
+          <p class="explore__card-title">Explore</p>
+          <h3 class="explore__card-h3">Most popular destinations</h3>
+          <p class="explore__card-p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+            natus iusto sint possimus fugiat? Reiciendis hic tempore, magni
+            perspiciatis molestias vitae sapiente nemo, possimus recusandae aut
+            fugit! Vel, quia tempore?
+          </p>
+          <a href="#" class="explore__card-content-a">explore all</a>
+        </div>
+      </div>
+      <div class="explore__slider">
+        <div class="explore__slider-content">
+          <!-- slider swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="img/Slide1.jpg" alt="Paris" />
+                  <p>Paris, France</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="img/Slide2.jpg" alt="Italy" />
+                  <p>Roma, Italy</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="img/slide4.jpg" alt="Havana" />
+                  <p>Havana, Cuba</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="img/slide5.jpg" alt="Barcelona" />
+                  <p>Barcelona, Spain</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -16,6 +16,9 @@
     background: $color3;
     padding: 10px 100px 10px 40px;
     border-radius: 50px;
+    @include breakpoint(phone) {
+      padding: 10px 40px 10px 30px;
+    }
   }
 
   .header__search-icon1 {

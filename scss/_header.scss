@@ -4,7 +4,16 @@
 @import "global";
 
 header {
+    background: linear-gradient(rgba($coloBlack, 0.35), rgba($coloBlack, 0.35)),
+        url("../img/header_bcg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      
+
   @include breakpoint(tablet) {
+    height: auto;
     background: linear-gradient(rgba($coloBlack, 0.35), rgba($coloBlack, 0.35)),
       url("../img/background3.jpg");
     background-position: center;
@@ -17,6 +26,17 @@ header {
   }
   @include breakpoint(phone) {
     overflow: hidden;
+    height: auto;
+    background: linear-gradient(rgba($coloBlack, 0.35), rgba($coloBlack, 0.35)),
+      url("../img/background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .bg-video {
+      display: none;
+    }
   }
   .bg-video {
     position: absolute;
@@ -122,6 +142,7 @@ header {
       background: $color2;
       transition: $transition;
       transform: translate(-100%);
+      z-index: 10;
     }
 
     @include breakpoint(phone) {
@@ -135,6 +156,7 @@ header {
       background: $color2;
       transition: $transition;
       transform: translate(-100%);
+      z-index: 10;
     }
     li {
       margin-left: 20px;
@@ -164,7 +186,7 @@ header {
   .active__btn {
     opacity: 1 !important;
     z-index: 11;
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 30px;
     font-size: 2.5rem;
@@ -177,7 +199,7 @@ header {
   .active__btn {
     opacity: 1 !important;
     z-index: 11;
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 30px;
     font-size: 2.5rem;
@@ -197,12 +219,18 @@ HEADER CONTENT
 .header__content {
   display: flex;
   color: $white;
+
+  
   @include breakpoint(tablet) {
+    flex-direction: column;
+  }
+  @include breakpoint(phone) {
     flex-direction: column;
   }
 }
 
 .header__info {
+  padding-bottom: 50px;
   h1 {
     font-size: 3.1rem;
     margin-top: 50px;
@@ -231,11 +259,13 @@ HEADER CONTENT
     margin-top: 330px;
 
     @include breakpoint(tablet) {
-      display: flex;
-      // margin-top: 70px;
-      //   margin-left: 140px;
-      //   margin-bottom: 70px;
+      // display: flex;
       margin: 70px 0 70px 140px;
+    }
+    @include breakpoint(phone) {
+      // display: flex;
+      margin: 70px 0 70px 140px;
+      flex-direction: column;
     }
 
     .fa-quote-left {
@@ -247,12 +277,20 @@ HEADER CONTENT
   .header__quide-best {
     margin-left: -34px;
     margin-top: 30px;
+    @include breakpoint(phone) {
+      margin-left: 14px;
+      margin-top: -44px;
+    }
     p {
       max-width: 460px;
     }
   }
 
   .header__quide-profile {
+    @include breakpoint(phone) {
+      margin-top: 30px;
+      margin-left: auto;
+    }
     img {
       width: 44px;
       height: 44px;
@@ -264,9 +302,14 @@ HEADER CONTENT
     position: absolute;
     transform: rotate(-90deg) scaleX(-1);
     transform-origin: top left;
-    margin-left: 4px;
     margin-top: 20px;
     width: 60px;
+    @include breakpoint(phone) {
+      transform: rotate(0deg) scaleX(-1);
+      transform-origin: top left;
+      margin-left: -10px;
+      margin-top: -40px;
+    }
     .header__quide-name {
       transform: scaleX(-1);
       font-weight: 700;

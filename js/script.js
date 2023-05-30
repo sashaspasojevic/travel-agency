@@ -39,3 +39,20 @@ internalSearchBtn.addEventListener("click", () => {
   searchBtn.style.display = "inline";
   headerLinks.classList.remove("nav__header-ul--toggle");
 });
+
+// Swiper
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+
+  slidesPerView: "auto",
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  nextButton: "#js-prev1",
+  prevButton: "#js-next1",
+});
