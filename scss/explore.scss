@@ -3,7 +3,7 @@
 @import "global";
 
 .explore {
-  border: 1px solid $color4;
+  // border: 1px solid $color4;
   display: flex;
   background-color: $color3;
   align-items: center;
@@ -71,11 +71,11 @@
   max-width: 700px;
   height: 100%;
   margin-right: unset;
+  p {
+    color: #fff;
+  }
 }
 
-p {
-  color: #fff;
-}
 
 .swiper-slide img {
   display: block;

@@ -30,6 +30,10 @@ butoon
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -116,6 +120,18 @@ select {
 a {
   text-decoration: none;
   color: inherit; }
+
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section__title::after {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(40deg, #9ec1d7, #fff);
+    margin: 10px auto 70px auto; }
 
 /**************
 FLEX
@@ -299,6 +315,18 @@ select {
 a {
   text-decoration: none;
   color: inherit; }
+
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section__title::after {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(40deg, #9ec1d7, #fff);
+    margin: 10px auto 70px auto; }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/header_bcg.jpg");
@@ -773,6 +801,18 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section__title::after {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(40deg, #9ec1d7, #fff);
+    margin: 10px auto 70px auto; }
+
 /**************
 FLEX
 **************/
@@ -927,8 +967,19 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section__title::after {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(40deg, #9ec1d7, #fff);
+    margin: 10px auto 70px auto; }
+
 .explore {
-  border: 1px solid #1b1c27;
   display: flex;
   background-color: #9ec1d7;
   align-items: center; }
@@ -1000,9 +1051,8 @@ a {
   max-width: 700px;
   height: 100%;
   margin-right: unset; }
-
-p {
-  color: #fff; }
+  .swiper p {
+    color: #fff; }
 
 .swiper-slide img {
   display: block;
@@ -1037,5 +1087,233 @@ p {
 
 .swiper-button-next {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 80% 50%, 50% 0); }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+/**********************************
+butoon
+************************************/
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+/**********************************
+butoon
+************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 40px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section__title::after {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(40deg, #9ec1d7, #fff);
+    margin: 10px auto 70px auto; }
+
+.traveling {
+  height: 770px; }
+
+.traveling__holder {
+  background-color: #18465a;
+  margin-top: 50px;
+  position: relative; }
+  .traveling__holder .traveling__description {
+    max-width: 40%;
+    padding: 25px 0 20px 20px; }
+    .traveling__holder .traveling__description h3 {
+      text-transform: uppercase; }
+    .traveling__holder .traveling__description h4 {
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-weight: 400; }
+    .traveling__holder .traveling__description .traveling__link {
+      display: inline-block;
+      text-align: center;
+      background-color: #9ec1d7;
+      color: #fff;
+      border: 1px solid #9ec1d7;
+      letter-spacing: 2px;
+      padding: 16px 20px;
+      overflow: hidden;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      overflow: hidden;
+      margin-top: 30px; }
+      .traveling__holder .traveling__description .traveling__link:hover {
+        color: #9ec1d7;
+        background-color: #fff;
+        border: 1px solid #9ec1d7; }
+  .traveling__holder .traveling__accordion {
+    width: 50%;
+    background-color: #9ec1d7;
+    position: absolute;
+    right: 20px;
+    top: -20px; }
+    .traveling__holder .traveling__accordion h3 {
+      text-align: center;
+      margin: 25px 0; }
+    .traveling__holder .traveling__accordion .accordion {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 2px; }
+      .traveling__holder .traveling__accordion .accordion .accordion__item {
+        margin-bottom: 20px; }
+      .traveling__holder .traveling__accordion .accordion__header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+        color: #eff1ee;
+        cursor: pointer; }
+        .traveling__holder .traveling__accordion .accordion__header:hover {
+          opacity: 0.5; }
+        .traveling__holder .traveling__accordion .accordion__header strong {
+          margin-right: 20px; }
+      .traveling__holder .traveling__accordion .accordion .accordion__header-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/italy_panorama.jpg); }
+      .traveling__holder .traveling__accordion .accordion .accordion__header-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/china.jpg); }
+      .traveling__holder .traveling__accordion .accordion .accordion__header-3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/brazil_panorama.jpg); }
+      .traveling__holder .traveling__accordion .accordion .accordion__header-4 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/cuba.jpg); }
+      .traveling__holder .traveling__accordion .accordion .accordion__header-5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/spania.jpg); }
+      .traveling__holder .traveling__accordion .accordion__body {
+        padding: 0 1rem;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        max-height: 0; }
+        .traveling__holder .traveling__accordion .accordion__body h3::after {
+          display: block;
+          content: "";
+          width: 10%;
+          height: 2px;
+          background: #65403a;
+          margin: 10px auto 10px auto; }
+        .traveling__holder .traveling__accordion .accordion__body p {
+          margin-bottom: 50px; }
+      .traveling__holder .traveling__accordion .accordion__body.active {
+        max-height: fit-content; }
+
+.accordion__header.active {
+  opacity: 0.5; }
+
+.accordion__header.active i {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */

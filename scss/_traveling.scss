@@ -1,0 +1,142 @@
+@import "var";
+@import "mixins";
+@import "global";
+
+.traveling {
+  height: 770px;
+}
+
+.traveling__holder {
+  background-color: $color1;
+  margin-top: 50px;
+  position: relative;
+  .traveling__description {
+    max-width: 40%;
+    padding: 25px 0 20px 20px;
+    h3 {
+      text-transform: uppercase;
+    }
+    h4 {
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-weight: 400;
+    }
+    .traveling__link {
+      @include btn();
+      margin-top: 30px;
+    }
+  }
+
+  .traveling__accordion {
+    width: 50%;
+    background-color: $color3;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+
+    h3 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .accordion {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 2px;
+
+      .accordion__item {
+        margin-bottom: 20px;
+      }
+
+      &__header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+        color: $color2;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+        strong {
+          margin-right: 20px;
+        }
+      }
+
+      .accordion__header-1 {
+        background-image: linear-gradient(
+            rgba($coloBlack, 0.45),
+            rgba($coloBlack, 0.45)
+          ),
+          url(../img/italy_panorama.jpg);
+      }
+      .accordion__header-2 {
+        background-image: linear-gradient(
+            rgba($coloBlack, 0.45),
+            rgba($coloBlack, 0.45)
+          ),
+          url(../img/china.jpg);
+      }
+      .accordion__header-3 {
+        background-image: linear-gradient(
+            rgba($coloBlack, 0.45),
+            rgba($coloBlack, 0.45)
+          ),
+          url(../img/brazil_panorama.jpg);
+      }
+      .accordion__header-4 {
+        background-image: linear-gradient(
+            rgba($coloBlack, 0.45),
+            rgba($coloBlack, 0.45)
+          ),
+          url(../img/cuba.jpg);
+      }
+      .accordion__header-5 {
+        background-image: linear-gradient(
+            rgba($coloBlack, 0.45),
+            rgba($coloBlack, 0.45)
+          ),
+          url(../img/spania.jpg);
+      }
+
+      &__body {
+        padding: 0 1rem;
+        text-align: center;
+        overflow: hidden;
+        transition: $transition;
+        max-height: 0;
+        h3::after {
+          display: block;
+          content: "";
+          width: 10%;
+          height: 2px;
+          background: $color5;
+          margin: 10px auto 10px auto;
+        }
+        p {
+          margin-bottom: 50px;
+        }
+      }
+      &__body.active {
+        max-height: fit-content;
+      }
+    }
+  }
+}
+
+.accordion__header.active {
+  opacity: 0.5;
+}
+
+.accordion__header.active i {
+  transform: rotate(180deg);
+  transition: $transition;
+}
+
