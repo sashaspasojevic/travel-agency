@@ -4,15 +4,40 @@
 
 .traveling {
   height: 770px;
+  @include breakpoint(tablet) {
+    height: 1050px;
+  }
+  @include breakpoint(phone) {
+    height: 1050px;
+  }
 }
 
 .traveling__holder {
   background-color: $color1;
   margin-top: 50px;
   position: relative;
+  z-index: 3;
+  @include breakpoint(tablet) {
+    background-color: transparent;
+  }
+  @include breakpoint(phone) {
+    background-color: transparent;
+  }
   .traveling__description {
     max-width: 40%;
     padding: 25px 0 20px 20px;
+    @include breakpoint(tablet) {
+      background-color: $color1;
+      z-index: 2;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    @include breakpoint(phone) {
+      background-color: $color1;
+      z-index: 2;
+      max-width: 90%;
+      margin: 0 auto;
+    }
     h3 {
       text-transform: uppercase;
     }
@@ -33,6 +58,22 @@
     position: absolute;
     right: 20px;
     top: -20px;
+    @include breakpoint(tablet) {
+      width: 100%;
+      position: absolute;
+      right: unset;
+      top: 50%;
+      z-index: -1;
+      padding-top: 155px;
+    }
+    @include breakpoint(phone) {
+      width: 100%;
+      position: absolute;
+      right: unset;
+      top: 50%;
+      z-index: -1;
+      padding-top: 155px;
+    }
 
     h3 {
       text-align: center;
@@ -139,4 +180,3 @@
   transform: rotate(180deg);
   transition: $transition;
 }
-

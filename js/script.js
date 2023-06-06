@@ -61,6 +61,7 @@ var swiper = new Swiper(".mySwiper", {
 
 const acc_buttons = document.querySelectorAll(".accordion__header");
 const acc_contents = document.querySelectorAll(".accordion__body");
+const traveling = document.querySelector(".traveling__holder");
 
 acc_buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -79,4 +80,16 @@ acc_buttons.forEach((btn) => {
     panel.classList.toggle("active");
     btn.classList.toggle("active");
   });
+});
+
+traveling.addEventListener("click", (e) => {
+  if (!e.target.matches(".accordion__header")) {
+    acc_buttons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    acc_contents.forEach((acc) => {
+      acc.classList.remove("active");
+    });
+  }
 });

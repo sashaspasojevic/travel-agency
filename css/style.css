@@ -133,6 +133,10 @@ a {
     background: linear-gradient(40deg, #9ec1d7, #fff);
     margin: 10px auto 70px auto; }
 
+.ballon {
+  height: 200px;
+  background-color: red; }
+
 /**************
 FLEX
 **************/
@@ -327,6 +331,10 @@ a {
     height: 5px;
     background: linear-gradient(40deg, #9ec1d7, #fff);
     margin: 10px auto 70px auto; }
+
+.ballon {
+  height: 200px;
+  background-color: red; }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/header_bcg.jpg");
@@ -813,6 +821,10 @@ a {
     background: linear-gradient(40deg, #9ec1d7, #fff);
     margin: 10px auto 70px auto; }
 
+.ballon {
+  height: 200px;
+  background-color: red; }
+
 /**************
 FLEX
 **************/
@@ -978,6 +990,10 @@ a {
     height: 5px;
     background: linear-gradient(40deg, #9ec1d7, #fff);
     margin: 10px auto 70px auto; }
+
+.ballon {
+  height: 200px;
+  background-color: red; }
 
 .explore {
   display: flex;
@@ -1211,16 +1227,45 @@ a {
     background: linear-gradient(40deg, #9ec1d7, #fff);
     margin: 10px auto 70px auto; }
 
+.ballon {
+  height: 200px;
+  background-color: red; }
+
 .traveling {
   height: 770px; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .traveling {
+      height: 1050px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .traveling {
+      height: 1050px; } }
 
 .traveling__holder {
   background-color: #18465a;
   margin-top: 50px;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .traveling__holder {
+      background-color: transparent; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .traveling__holder {
+      background-color: transparent; } }
   .traveling__holder .traveling__description {
     max-width: 40%;
     padding: 25px 0 20px 20px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .traveling__holder .traveling__description {
+        background-color: #18465a;
+        z-index: 2;
+        max-width: 90%;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .traveling__holder .traveling__description {
+        background-color: #18465a;
+        z-index: 2;
+        max-width: 90%;
+        margin: 0 auto; } }
     .traveling__holder .traveling__description h3 {
       text-transform: uppercase; }
     .traveling__holder .traveling__description h4 {
@@ -1254,6 +1299,22 @@ a {
     position: absolute;
     right: 20px;
     top: -20px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .traveling__holder .traveling__accordion {
+        width: 100%;
+        position: absolute;
+        right: unset;
+        top: 50%;
+        z-index: -1;
+        padding-top: 155px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .traveling__holder .traveling__accordion {
+        width: 100%;
+        position: absolute;
+        right: unset;
+        top: 50%;
+        z-index: -1;
+        padding-top: 155px; } }
     .traveling__holder .traveling__accordion h3 {
       text-align: center;
       margin: 25px 0; }
