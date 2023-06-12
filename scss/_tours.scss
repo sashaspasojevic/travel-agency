@@ -1,0 +1,127 @@
+@import "mixins";
+@import "var";
+
+.tours {
+  background-color: $color1;
+  background-image: url(../img/suitcases.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 105% 0;
+  color: $color2;
+  height: 1000px;
+  @include breakpoint(phone) {
+    height: fit-content;
+    background-position: 0 80%;
+  }
+  .section__title {
+    margin-bottom: 100px;
+    &::after {
+      width: 20%;
+    }
+  }
+}
+
+.tours__city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color4;
+  background-color: $white;
+  max-width: 650px;
+  @include breakpoint(tablet) {
+    max-width: 600px;
+  }
+  @include breakpoint(phone) {
+    display: block;
+    max-width: unset;
+    width: 100%;
+    text-align: center;
+  }
+  &:hover {
+    cursor: pointer;
+    max-width: 700px;
+    @include breakpoint(tablet) {
+      max-width: 650px;
+    }
+    .tours__city-description {
+      padding: 30px 30px 30px 0;
+      @include breakpoint(tablet) {
+        padding: 15px 15px 15px 0;
+      }
+      @include breakpoint(phone) {
+        padding: 40px 0;
+      }
+    }
+    .tours__city-book {
+      flex-direction: column;
+      padding: 0 70px;
+      @include breakpoint(tablet) {
+        padding: 0 25px;
+      }
+      @include breakpoint(phone) {
+        padding: 20px 0;
+      }
+      button {
+        display: inline-block;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    @include breakpoint(tablet) {
+      margin-bottom: 55px;
+    }
+  }
+
+  .tours__city-icon {
+    padding-left: 30px;
+    @include breakpoint(tablet) {
+      padding-left: 20px;
+    }
+    @include breakpoint(phone) {
+      padding-left: unset;
+      padding-top: 20px;
+    }
+    i {
+      font-size: 2.5rem;
+      color: $color3;
+    }
+  }
+  .tours__city-description {
+    border-right: 5px dotted $color5;
+    padding: 20px 30px 20px 0;
+    @include breakpoint(tablet) {
+      padding: 15px 0 15px 15px;
+    }
+    @include breakpoint(phone) {
+      border-right: unset;
+      border-bottom: 5px dotted $color5;
+      padding: 20px 0;
+    }
+  }
+
+  .tours__city-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    @include breakpoint(tablet) {
+      padding: 0 15px;
+    }
+    @include breakpoint(phone) {
+      padding: 20px 0;
+    }
+    p {
+      color: $color5;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    button {
+      @include btn();
+      text-transform: capitalize;
+      padding: 8px 10px;
+      display: none;
+    }
+  }
+}

@@ -34,6 +34,8 @@ butoon
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -1235,10 +1237,10 @@ a {
   height: 770px; }
   @media only screen and (min-width: 651px) and (max-width: 896px) {
     .traveling {
-      height: 1050px; } }
+      height: 1070px; } }
   @media only screen and (min-width: 200px) and (max-width: 650px) {
     .traveling {
-      height: 1050px; } }
+      height: 1120px; } }
 
 .traveling__holder {
   background-color: #18465a;
@@ -1306,7 +1308,7 @@ a {
         right: unset;
         top: 50%;
         z-index: -1;
-        padding-top: 155px; } }
+        padding-top: 175px; } }
     @media only screen and (min-width: 200px) and (max-width: 650px) {
       .traveling__holder .traveling__accordion {
         width: 100%;
@@ -1314,7 +1316,7 @@ a {
         right: unset;
         top: 50%;
         z-index: -1;
-        padding-top: 155px; } }
+        padding-top: 175px; } }
     .traveling__holder .traveling__accordion h3 {
       text-align: center;
       margin: 25px 0; }
@@ -1376,5 +1378,142 @@ a {
 .accordion__header.active i {
   transform: rotate(180deg);
   transition: all 0.5s ease-in-out; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/**************
+hover link
+**************/
+/**********************************
+butoon
+************************************/
+.tours {
+  background-color: #18465a;
+  background-image: url(../img/suitcases.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 105% 0;
+  color: #eff1ee;
+  height: 1000px; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .tours {
+      height: fit-content;
+      background-position: 0 80%; } }
+  .tours .section__title {
+    margin-bottom: 100px; }
+    .tours .section__title::after {
+      width: 20%; }
+
+.tours__city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1b1c27;
+  background-color: #fff;
+  max-width: 650px; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .tours__city {
+      max-width: 600px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .tours__city {
+      display: block;
+      max-width: unset;
+      width: 100%;
+      text-align: center; } }
+  .tours__city:hover {
+    cursor: pointer;
+    max-width: 700px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .tours__city:hover {
+        max-width: 650px; } }
+    .tours__city:hover .tours__city-description {
+      padding: 30px 30px 30px 0; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .tours__city:hover .tours__city-description {
+          padding: 15px 15px 15px 0; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .tours__city:hover .tours__city-description {
+          padding: 40px 0; } }
+    .tours__city:hover .tours__city-book {
+      flex-direction: column;
+      padding: 0 70px; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .tours__city:hover .tours__city-book {
+          padding: 0 25px; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .tours__city:hover .tours__city-book {
+          padding: 20px 0; } }
+      .tours__city:hover .tours__city-book button {
+        display: inline-block; }
+  .tours__city:not(:last-child) {
+    margin-bottom: 60px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .tours__city:not(:last-child) {
+        margin-bottom: 55px; } }
+  .tours__city .tours__city-icon {
+    padding-left: 30px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .tours__city .tours__city-icon {
+        padding-left: 20px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .tours__city .tours__city-icon {
+        padding-left: unset;
+        padding-top: 20px; } }
+    .tours__city .tours__city-icon i {
+      font-size: 2.5rem;
+      color: #9ec1d7; }
+  .tours__city .tours__city-description {
+    border-right: 5px dotted #65403a;
+    padding: 20px 30px 20px 0; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .tours__city .tours__city-description {
+        padding: 15px 0 15px 15px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .tours__city .tours__city-description {
+        border-right: unset;
+        border-bottom: 5px dotted #65403a;
+        padding: 20px 0; } }
+  .tours__city .tours__city-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .tours__city .tours__city-book {
+        padding: 0 15px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .tours__city .tours__city-book {
+        padding: 20px 0; } }
+    .tours__city .tours__city-book p {
+      color: #65403a;
+      font-size: 1.5rem;
+      font-weight: 700; }
+    .tours__city .tours__city-book button {
+      display: inline-block;
+      text-align: center;
+      background-color: #9ec1d7;
+      color: #fff;
+      border: 1px solid #9ec1d7;
+      letter-spacing: 2px;
+      padding: 16px 20px;
+      overflow: hidden;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      overflow: hidden;
+      text-transform: capitalize;
+      padding: 8px 10px;
+      display: none; }
+      .tours__city .tours__city-book button:hover {
+        color: #9ec1d7;
+        background-color: #fff;
+        border: 1px solid #9ec1d7; }
 
 /*# sourceMappingURL=style.css.map */

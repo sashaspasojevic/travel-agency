@@ -5,10 +5,10 @@
 .traveling {
   height: 770px;
   @include breakpoint(tablet) {
-    height: 1050px;
+    height: 1070px;
   }
   @include breakpoint(phone) {
-    height: 1050px;
+    height: 1120px;
   }
 }
 
@@ -64,7 +64,7 @@
       right: unset;
       top: 50%;
       z-index: -1;
-      padding-top: 155px;
+      padding-top: 175px;
     }
     @include breakpoint(phone) {
       width: 100%;
@@ -72,7 +72,7 @@
       right: unset;
       top: 50%;
       z-index: -1;
-      padding-top: 155px;
+      padding-top: 175px;
     }
 
     h3 {
