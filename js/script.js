@@ -3,18 +3,45 @@ const headerLinks = document.querySelector(".nav__header-ul");
 const navHeaderLoginUl = document.querySelector(".nav__header-login--ul");
 const closeBtn = document.querySelector("#close");
 
-navBtn.addEventListener("click", () => {
+const navLinks = document.querySelectorAll(".nav__header-li");
+
+const hideLinks = () => {
+  headerLinks.style.transform = "translate(-100%)";
+  navHeaderLoginUl.style.transform = "translate(-100%)";
+};
+
+const showLinks = () => {
   headerLinks.style.transform = "translate(0)";
   navHeaderLoginUl.style.transform = "translate(0)";
+};
+
+navBtn.addEventListener("click", () => {
+  showLinks();
   closeBtn.classList.add("active__btn");
 });
 
 closeBtn.addEventListener("click", () => {
-  headerLinks.style.transform = "translate(-100%)";
-  navHeaderLoginUl.style.transform = "translate(-100%)";
+  hideLinks();
   closeBtn.classList.remove("active__btn");
 });
 
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth < 896) {
+      hideLinks();
+      closeBtn.classList.remove("active__btn");
+    }
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 896) {
+    showLinks();
+  }
+  if (window.innerWidth < 896) {
+    hideLinks();
+  }
+});
 /* search button*/
 
 const searchBtn = document.getElementById("searchBtn");

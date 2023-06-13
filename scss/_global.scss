@@ -45,6 +45,9 @@ body {
   line-height: 1.5;
   font-family: $fontFamily;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,

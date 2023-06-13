@@ -73,6 +73,9 @@ body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
 ol {
@@ -271,6 +274,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
@@ -761,6 +767,9 @@ body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
 ol {
@@ -930,6 +939,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,
@@ -1166,6 +1178,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,

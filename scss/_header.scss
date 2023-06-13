@@ -82,6 +82,7 @@ header {
     display: flex;
     margin-right: auto;
     margin-left: 50px;
+    // transform: translate(0);
     @include breakpoint(tablet) {
       position: fixed;
       top: 0;
@@ -131,6 +132,7 @@ header {
 
   .nav__header-login--ul {
     display: flex;
+    // transform: translate(0) !;
     @include breakpoint(tablet) {
       position: fixed;
       bottom: 0;
