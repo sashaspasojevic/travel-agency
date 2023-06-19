@@ -344,13 +344,16 @@
             />
           </div>
           <div class="contact__form-field">
-            <label for="textarea" class="contact__form-label"> Message </label>
+            <label for="textarea" class="contact__form-label">
+              Message <span>&ast;</span>
+            </label>
             <textarea
               name="textarea"
               id="textarea"
               placeholder="Type your messages"
               class="contact__form-textarea"
               maxlength="600"
+              required
             ></textarea>
           </div>
           <div class="contact__form-field2">
@@ -372,9 +375,83 @@
         </form>
       </div>
     </section>
-    <!-- balon -->
-    <section class="ballon"></section>
-
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <!-- footer info -->
+        <div class="footer__info py">
+          <!-- footer contact -->
+          <div class="footer__info-contact">
+            <div class="footer__info-logo">
+              <a href="index.html"
+                ><img src="img/logo-removebg-preview.png" alt="logo"
+              /></a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              quasi.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/%D0%97%D0%BC%D0%B0%D1%98+%D0%88%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0,+%D0%9D%D0%BE%D0%B2%D0%B8+%D0%A1%D0%B0%D0%B4/@45.2561198,19.8443261,17z/data=!3m1!4b1!4m6!3m5!1s0x475b10688c332f19:0x3fc886d28c5f19b6!8m2!3d45.2561198!4d19.846901!16s%2Fg%2F1224hg2x?hl=sr&entry=ttu"
+                  target="_blank"
+                  ><span>Address: </span>Zmaj Jovina bb Novi Sad</a
+                >
+              </li>
+              <li>
+                <a href="tel:+1-555-555-1212"
+                  ><span>Phone: </span>555-555-1212</a
+                >
+              </li>
+              <li>
+                <a href="mailto:aworldtraveler@gmail.com">
+                  <span>Email: </span>aworldtraveler@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- footer links -->
+          <div class="footer__info-links">
+            <!-- first column -->
+            <div>
+              <h4>Documents</h4>
+              <ul>
+                <li><a href="#">General travel conditions</a></li>
+                <li><a href="#">Identification form</a></li>
+                <li><a href="#">Travel guarantee certificate</a></li>
+                <li>
+                  <a href="#">Travel organizer license application </a>
+                </li>
+              </ul>
+            </div>
+            <!-- second column -->
+            <div>
+              <h4>Free Tools</h4>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Instagram Brand Index</a></li>
+                <li><a href="#">Instagram Influencers Index</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer social -->
+      <div class="footer__social">
+        <div class="container">
+          <p>
+            &copy; <span id="date"></span>. All Rights Reserved by A World
+            Traveller
+          </p>
+          <div class="footer__social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>

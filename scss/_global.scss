@@ -32,11 +32,6 @@ dd {
   margin: 0;
 }
 
-// *{
-//         margin: 0;
-//         padding: 0;
-//         box-sizing: border-box;
-// }
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -111,27 +106,6 @@ select {
     padding: 30px 0;
   }
 }
-
-// .btn {
-//   display: inline-block;
-//   background-color: blue;
-//   color: white;
-//   border: 1px solid blue;
-//   font-size: 14px;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   padding: 20px 30px;
-//   overflow: hidden;
-//   margin: 10px 0;
-//   border-radius: 3px;
-//   cursor: pointer;
-//   // transition: $transition;
-//   &:hover {
-//     color: white;
-//     background-color: orchid;
-//     border: none;
-//   }
-// }
 
 a {
   text-decoration: none;

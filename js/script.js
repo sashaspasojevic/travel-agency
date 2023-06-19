@@ -120,3 +120,8 @@ traveling.addEventListener("click", (e) => {
     });
   }
 });
+
+// set year in copyright
+
+const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();

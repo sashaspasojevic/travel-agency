@@ -1,0 +1,112 @@
+@import "var";
+@import "mixins";
+
+footer {
+  background: $color1;
+  color: $color2;
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  @include breakpoint(phone) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
+
+.footer__info-contact {
+  @include breakpoint(tablet) {
+    order: 1;
+    margin-top: 30px;
+  }
+  .footer__info-logo {
+    width: 100px;
+  }
+  p {
+    margin: 20px 0;
+  }
+  li > a > span {
+    color: $color3;
+  }
+}
+
+.footer__info-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include breakpoint(phone) {
+    display: block;
+    margin-top: 50px;
+  }
+  div {
+    h4 {
+      margin-bottom: 75px;
+      @include breakpoint(phone) {
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(2) {
+      margin-left: 50px;
+      @include breakpoint(phone) {
+        margin-left: unset;
+        margin-top: 50px;
+      }
+    }
+  }
+  ul {
+    li {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        content: "\f0c1";
+        color: $color3;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.footer__social {
+  background-color: $color4;
+  padding: 30px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      @include breakpoint(phone) {
+        order: 2;
+        margin-top: 30px;
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+    }
+    .footer__social-icons {
+      font-size: 1.5rem;
+      i {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
